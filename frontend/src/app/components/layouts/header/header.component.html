@@ -1,0 +1,40 @@
+<div id="toTop"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+<header class="header" >
+	<div class="container">
+		<div class="header_cn">
+			<div class="logo">
+				<a [routerLink]="['/']"><img src="{{this.headerLogo}}" alt=""></a>
+			</div>
+			<div class="header_right">
+				<div class="navigation">
+					<nav>
+						<ul>
+							<li><a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>             
+							<li class="sub_menu"><a [routerLink]="['/services']" routerLinkActive="active">Services</a>
+								<ul>
+									<li><a href="javascript:void(0)">Web Design</a></li>
+									<li><a href="javascript:void(0)">Website Maintenance</a></li>
+									<li><a href="javascript:void(0)">Web Hosting</a></li>
+									<li><a href="javascript:void(0)">Domain Names</a></li>
+									<li><a href="javascript:void(0)">Search Engine Optimization (SEO)</a></li>
+									<li><a href="javascript:void(0)">Digital Marketing</a></li>
+									<li><a href="javascript:void(0)">Computer Repair</a></li>
+								</ul>
+							</li>             
+							<li><a [routerLink]="['/portfolio']" routerLinkActive="active">Portfolio</a></li>             
+							<li><a [routerLink]="['/testimonials']" routerLinkActive="active">Testimonials</a></li>             
+							<li><a [routerLink]="['/contact']" routerLinkActive="active">Contact</a></li>             
+							<li><a [routerLink]="['/francais']" routerLinkActive="active">Français</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="get_quote">
+					<a href="javascript:void(0)">Get A Quote</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="small_nav"></div>
+    <div class="clearfix"></div>
+</header>
+<div class="header_take_place"></div>

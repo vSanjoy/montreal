@@ -1,0 +1,102 @@
+.footer{
+    display: block; 
+    background: #f3f4f6;
+}
+.footer_top{
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-between;
+    h2{
+        font-family: $medium-font;
+        font-size: 21px; 
+        color: $base-font-color;
+        padding: 0 0 15px 0;
+    }
+    ul{
+        @include margin-reset;
+        list-style: none;
+        li{
+            float: none;
+            display: block;
+            a{
+                color: #1316f7;
+                font-size: 16px;
+                line-height: 37px;
+                font-family: $regular-font;
+                &:hover{
+                    color: #6c6c6c;
+                }
+                span{
+                    width: 21px;
+                    height: 21px;
+                    color: #fff; 
+                    text-align: center;
+                    line-height: 23px;
+                    display: inline-block;
+                    border-radius: 50%;
+                    font-size: 14px;
+                    margin: 0 5px 0 0;
+                    &.facebook{
+                        background: #184895;
+                    }
+                    &.twitter{
+                        background: #1cbdd0;
+                    }
+                    &.linkedin{
+                        background: #178cde;
+                    }
+                }
+            }
+        }
+    }
+}
+.foot_box_1{
+    width: 24%;
+    .footer_logo{
+        width: 197px;
+    }
+}
+.foot_box_2{
+    width: 16%;
+}
+.foot_box_3{
+    width: 16%;
+}
+.foot_box_4{
+    width: 24%;
+}
+.foot_box_5{
+    width: 12%;
+}
+.footer_bottom{
+    padding: 30px 0;
+    border-top: 1px solid #e7e7e8;
+    p{ 
+        padding-bottom: 0;
+        font-family: $regular-font;
+        color: $base-font-color;
+        font-size: 15px;
+        span{
+            color: #1013ff;
+        }
+        a{ color: #282828;
+            &:hover{ color: #6c6c6c;}
+        }
+    }
+}
+
+#toTop {
+    width:30px;
+    height: 30px;
+    background: #c7c7c7;
+    color: #fff;
+    position: fixed;
+    bottom: 28px;
+    right: 20px;
+    display: none;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    z-index: 9;
+}

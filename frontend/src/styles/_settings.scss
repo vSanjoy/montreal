@@ -1,0 +1,65 @@
+//MIXIN
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; 
+     -moz-box-sizing: $box-model; 
+          box-sizing: $box-model;
+}
+@mixin appearance($appearance) {
+  -webkit-appearance:$appearance; 
+    -moz-appearance:$appearance;  
+    -o-appearance:$appearance; 
+    -ms-appearance:$appearance; 
+    appearance:$appearance; 
+}
+@mixin display-flex-spacebetween{
+	display: flex; 
+	align-items:center;
+	justify-content:space-between;
+}
+@mixin margin-reset{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+// BASE
+$bg-color:#fff;
+$secondary-color:#184895;
+$get-quote-color:#1316f7;
+$regular-font:GoogleSansRegular;
+$medium-font:GoogleSansMedium;
+$bold-font:GoogleSansBold;
+$base-font-color:#282828;
+$base-font-size:18px;
+$base-line-height:31px;
+
+$h1-font-size:45px;
+$h1-line-height:55px;
+
+
+
+//MENU
+$menu-color:#231f20;
+$menu-font-size:19px;
+$menu-line-height:60px;
+$menu-padding:0 24px;
+$menu-hover-color:#1417ee;
+
+$dropdown-min-width:290px;
+$dropdown-background-color:#fff;
+$dropdown-font-size:16px;
+$dropdown-line-height:30px;
+$dropdown-padding:10px 15px;
+$dropdown-border-radius:4px;
+
+//BREAK POINTS
+
+$breakpoint-medium-monitor: 1400px;
+$breakpoint-small-monitor: 1199px;
+$breakpoint-tablet: 992px;
+$breakpoint-mobile: 767px;
+
+//Inner Banner
+
+$innerbanner-padding: 60px 0;

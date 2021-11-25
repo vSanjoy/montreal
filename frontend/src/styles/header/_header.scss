@@ -1,0 +1,152 @@
+.header{ 
+	display: block; 
+	padding: 20px 0;
+	position: relative;
+	z-index: 2;
+	transition: all .5s;
+}
+
+.header_cn{ 
+	@include display-flex-spacebetween; 
+}
+.logo{ 
+	display: block;
+	width:320px;
+}
+.header_right{
+	@include display-flex-spacebetween;  
+	margin-top: 15px;
+}
+.navigation{ 
+	ul{ 
+		@include margin-reset;
+		list-style: none;
+		li{
+			display: inline-block;
+			vertical-align: top;
+			position: relative;
+			a{
+				display: block;
+				color: $menu-color;
+				font-size: $menu-font-size;
+				padding: $menu-padding;
+				line-height:$menu-line-height;
+				&:hover{
+					color: $menu-hover-color;
+				}
+				&.active{
+					color: $menu-hover-color;
+				}
+			}
+			ul{
+				min-width: $dropdown-min-width; 
+				background: $dropdown-background-color; 
+				position: absolute; 
+				top:80%; 
+				left: 0px; 
+				border-radius: $dropdown-border-radius;  
+				visibility: hidden; 
+				opacity: 0; 
+				transition: all .2s; 
+				z-index: 9; 
+				border:1px solid #f8f8f8; 
+				display: block; 
+				z-index: -1;
+				height: 0px;
+				overflow: hidden;
+				li{
+					display: block; 
+					margin: 0;
+					position: relative;
+					a{ 
+						margin: 0px; 
+						color: $menu-color ; 
+						display: block; 
+						padding: $dropdown-padding; 
+						line-height: $dropdown-line-height; 
+						font-size: $dropdown-font-size; 
+					}
+				}
+				
+			}
+			&:hover ul{
+				visibility: visible; 
+				opacity: 1.0 ; 
+				transition: all .2s; 
+				top:100%; 
+				z-index: 1;
+				height: auto;
+			}
+			&.active{
+				a{
+					color: $menu-hover-color;	
+				}
+
+			}
+			&.sub_menu{
+				&:after{
+					content: '\f107'; position: absolute; right: 5px; top: 15px;  font-family: 'FontAwesome';
+				}
+
+			}
+
+
+		}
+	}
+
+ }
+ .get_quote{ 
+	margin: 0 0 0 15px;
+	a{
+		display: block;
+		width: 174px; 
+		height: 44px;
+		line-height: 44px;
+		text-align: center;
+		font-family: $medium-font;
+		font-size: 16.62px;
+		color: $get-quote-color;
+		border: 1px solid $get-quote-color;
+		border-radius: 44px;
+		&:hover{
+			background-color: $get-quote-color;
+			color: #fff; 
+		}
+	}
+}
+
+
+.header_take_place{ height: 95px; display: none; }
+.take_height{ display: block; }
+
+
+.fixed{ 
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(255, 255, 255, 0.95);
+	z-index: 9;
+	transition: all .5s;
+	padding: 10px 0;
+	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+	animation-name: animationFade;    
+	animation-duration: 1s;  
+	animation-fill-mode: both;   
+}
+
+
+@keyframes animationFade {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+

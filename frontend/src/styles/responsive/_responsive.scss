@@ -1,0 +1,344 @@
+@media (max-width: $breakpoint-medium-monitor) {
+    .logo{ width:230px}
+    .navigation{
+        ul{
+            li{
+                a{
+                    font-size: 18px;
+                    padding: 0 20px;
+                }
+            }
+
+        }
+    }
+    .section_2{
+        h2{
+            br{ display: none;}
+        }
+    }
+    .banner_img{
+        width: auto;
+        margin-top: -48px;
+    }
+    .banner {
+        h1{
+            font-size: 35px;
+            line-height: 50px;
+            span{
+                font-size: 50px;
+                line-height: 70px;
+            }
+        }
+    }
+    .banner_button_holder {
+        margin: 35px 0 25px 0;
+    }
+    .banner_content {
+        padding-top: 90px;
+    }
+    .approch_box{
+        p{
+            br{ display: none;}
+        }
+    }
+    .serviceTextHolder{
+        padding: 0;
+    }
+}
+@media (max-width: $breakpoint-small-monitor) {
+    .get_quote{
+        margin: 0 0 0 15px;
+        a{ 
+            width: 150px;
+        }
+    }
+    .logo{
+        width: 180px;
+    }
+    .navigation{
+        ul{
+            li{
+                a{
+                    font-size: 16px;
+                    padding: 0 15px;
+                }
+            }
+
+        }
+    }
+   
+    .header_right{ margin-top: 0;}
+    .banner {
+        h1{
+            font-size: 30px;
+            line-height: 44px;
+            span{
+                font-size: 40px;
+                line-height: 60px;
+            }
+        }
+    }
+    .banner_button_holder {
+        ul{
+            li{
+                a{
+                    width: 190px;
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .section_2 {
+        padding: 60px 0 0 0;
+    }
+    .approch_box{
+        h4{
+            br{
+                display: none;
+            }
+        }
+    }
+    .approch_box{
+        padding: 30px 15px;
+        p{
+            br{
+                display: none;
+            }
+        }
+    }
+    .section_6 {
+        h2{
+            font-size: 36px;
+        }
+    }
+    .footer_top{
+        padding: 45px 0;
+        h2{
+            font-size: 18px;
+        }
+        ul{
+            li{
+                a{ 
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .navigation ul li.sub_menu:after{ right: 0;}
+    .serviceText{
+        p{
+            font-size: 16px;
+            padding-bottom: 20px;
+            line-height: 24px;
+            strong{
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+    }
+    .serviceRepeater {
+        margin-bottom: 80px;
+    }
+    .banner_caption{
+        p{
+            br{
+                display: none;
+            }
+        }
+    }
+    .testi_cn {
+        padding: 0 0 0 40px;
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+.header{ padding-bottom: 0;}
+.fixed{ padding-bottom: 0; position: static;}
+.header_cn{ padding-bottom: 20px;}
+.banner_img{ margin-top: 0;}
+.banner_content{ padding-top: 0; text-align: center;}
+.approch_box{ 
+    padding: 30px; 
+    text-align: 
+    center;
+    h4{
+        &:after{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+.approch_box{
+    margin-bottom: 25px;
+}
+.section_3{ 
+    text-align: center;
+    padding-bottom: 0;
+    a.btn_learn{
+        width: 190px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        margin: 25px auto;
+    }
+}
+.section_4{
+    a.btn_learn{
+        width: 190px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        margin: 25px auto;
+    }
+}
+.section_5{
+    a.btn_learn{
+        width: 190px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        margin: 25px auto;
+    }
+}
+
+.form_holder{ margin-top: 50px;}
+.footer_top{ flex-wrap: wrap;}
+.foot_box_1, .foot_box_2, .foot_box_3, .foot_box_4, .foot_box_5{
+    width: 100%; 
+    margin-bottom: 15px; 
+    text-align: center;
+}
+.footer_bottom{
+    text-align: center;
+}
+.footer_logo{ margin: 0 auto 25px;}
+a:hover, a:focus, a:active{ text-decoration:none; border: 0px; outline: none; -webkit-transition-property: none;
+    -moz-transition-property: none;
+    -o-transition-property: none;
+    transition-property: none;}	
+
+    .serviceImage:after{ display: none;}
+    .serviceImage{
+        padding: 0 0 30px 0;
+        img{ width: 100%;}
+    }
+    .bannerContent{
+        p{
+            br{
+                display: none;
+            }
+        }
+    }
+    .portfolio_tab_holder{
+        ul {
+            li {
+                button{
+                    font-size: 14px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+    .testi_img{
+        width: 250px;
+    }
+    .testi_cn {
+        h2{
+            font-size: 23px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    .mapHolder{ padding-top: 45px;}
+
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .banner{
+        h1{
+            font-size: 23px;
+            line-height: 36px;
+        }
+    }
+    .banner_button_holder {
+        ul{
+            li{
+                margin:0 2px 10px 2px;
+            }
+        }
+    }
+    .section_2 {
+        h2{
+            font-size: 20px;
+        }
+    }
+    .approch_box{
+        margin: 0 0 25px 0;
+    }
+    .section_3{
+        padding-bottom: 0;
+        h2{
+            padding-top: 30px;
+        }
+    }
+    .section_4{ padding-bottom: 30px;}
+    .section_6{
+        padding: 50px 0;
+        text-align: center;
+    }
+    .banner{
+        h2{ font-size: 30px;}
+    }
+    .section_5 {
+        h2{ font-size: 40px;}
+    }
+    .serviceTextHolder{
+        text-align: center;
+    }
+    .innerpageHolder {
+        padding: 35px 0;
+    }
+    .serviceTitle {
+        h2{
+            font-size: 28px;
+            line-height: 34px;
+        }
+    }
+    .serviceRepeater{
+        margin-bottom: 45px;
+    }
+    .testimonials_box{
+        display: block;
+    }
+    .testi_img{
+        width: 100%;
+        margin: 0 0 25px 0;
+    }
+    .testi_img {
+        img{
+            width: 100%;
+        }
+    }
+    .testi_cn{
+        padding: 0;
+        text-align: center;
+    }
+    .client_name{
+        text-align: left;
+    }
+    .take_height{
+        display: none;
+    }
+    .defaulPageContent{ padding: 25px 0 0 0 ; text-align: center;}
+    .defaulPageContent {
+        h2{
+            br{
+                display: none;
+            }
+        }
+    }
+}

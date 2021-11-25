@@ -1,0 +1,56 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer_top">
+            <div class="foot_box_1" *ngIf="footerLogo">
+                <div class="footer_logo">
+                    <a [routerLink]="['/']"><img src="{{this.footerLogo}}" alt=""></a>
+                </div>
+            </div>
+            <div class="foot_box_2">
+                <h2>Navigate</h2>
+                <ul>
+                    <li><a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li> 
+                    <li class="sub_menu"><a [routerLink]="['/services']" routerLinkActive="active">Services</a>
+                        <li><a [routerLink]="['/portfolio']" routerLinkActive="active">Portfolio</a></li>             
+                        <li><a [routerLink]="['/testimonials']" routerLinkActive="active">Testimonials</a></li>             
+                        <li><a [routerLink]="['/francais']" routerLinkActive="active">Français</a></li>
+                </ul>
+            </div>
+            <div class="foot_box_3">
+                <h2>Take Action</h2>
+                <ul>
+                    <li><a href="javascript:void(0)">Get a Quote</a></li>
+                    <li><a [routerLink]="['/contact']" routerLinkActive="active">Contact Us</a></li>
+                </ul>
+            </div>
+            <ng-container *ngIf="serviceList.length > 0;then service_list_exist"></ng-container>
+            <ng-template #service_list_exist>
+                <div class="foot_box_4">
+                    <h2>Services</h2>
+                    <ul>
+                        <li *ngFor="let service of serviceList;"><a href="javascript:void(0)" [innerHTML]="service.title"></a></li>
+                    </ul>
+                </div>
+            </ng-template>
+            <div class="foot_box_5" *ngIf="footerDetails.facebook_link != '' || footerDetails.twitter_link != '' || footerDetails.linkedin_link != ''">
+                <h2>We are Social</h2>
+                <ul>
+                    <li *ngIf="footerDetails.facebook_link">
+                        <a href="{{footerDetails.facebook_link}}" target="_blank"><span class="facebook"><i class="fa fa-facebook"></i></span>Facebook</a>
+                    </li>
+                    <li *ngIf="footerDetails.twitter_link">
+                        <a href="{{footerDetails.twitter_link}}" target="_blank"><span class="twitter"><i class="fa fa-twitter"></i></span>Twitter</a>
+                    </li>
+                    <li *ngIf="footerDetails.linkedin_link">
+                        <a href="{{footerDetails.linkedin_link}}" target="_blank"><span class="linkedin"><i class="fa fa-linkedin"></i></span>Linked In </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <div class="container">
+            <p><small class="copyright-text" [innerHTML]="footerDetails.copyright_text"></small> <a href="javascript:void(0)">Privacy</a>. <a href="javascript:void(0)">Site Map</a></p>
+        </div>
+    </div>
+</footer>
